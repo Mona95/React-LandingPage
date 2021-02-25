@@ -1,0 +1,41 @@
+
+.appbar-wrapper{
+    background-color: transparent !important;
+    box-shadow: none !important;
+    button {
+        color: #0F2137;
+        font-size: 13px;
+        font-weight: 700;
+        font-style: normal;
+        text-transform: none;
+        font-family: 'Manrope-regular';
+        padding: 19px 35px;
+        margin: 1px;
+
+        &:hover, &:focus{
+           background-color: #1AC587; 
+           border-radius: 6px;
+           color: #fff;
+        }
+    }
+    button.isActive{
+        background-color: #1AC587; 
+        border-radius: 6px;
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .appbar-wrapper {
+      background-color: #fff !important;
+      padding:10px 0px;
+
+      button{
+          display: none;
+      }
+        
+      button.isMobile{
+          display: block ;
+      }
+    }
+  } 

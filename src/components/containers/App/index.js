@@ -1,10 +1,15 @@
+import { ReactComponent as VectorBackground } from '../../../assets/images/background.svg'
 import './index.scss';
+import Navbar from '../../UI/Navbar';
 
 const App = () => {
   return (
-    <div>
-      Landing Page
-    </div>
+    <>
+      <VectorBackground className="vector-bg" />
+      <div className="content">
+        <Navbar />
+      </div>
+    </>
   );
 }
 

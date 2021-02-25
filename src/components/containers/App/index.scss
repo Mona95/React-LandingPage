@@ -1,0 +1,22 @@
+.vector-bg{
+    z-index: -10;
+    position: absolute;
+    top: -14px;
+    left: -356px;
+    width: 1448px;
+    height: 647px;
+}
+
+.content{
+    padding: 20px 70px;
+}
+
+@media screen and (max-width: 375px) {
+    .content{
+        padding: 0;
+    }
+
+    .vector-bg{
+        display: none;
+    }
+  } 
