@@ -32,7 +32,7 @@ const Navbar = () => {
           <Button>Pricing</Button>
           <Button>Developers</Button>
           <Button>Contact</Button>
-          <Button className="isMobile isActive">Try now</Button>
+          <Button className="isMobile">Try now</Button>
         </Toolbar>
       </AppBar> 
         </div>
