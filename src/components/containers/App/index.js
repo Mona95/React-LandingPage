@@ -3,15 +3,20 @@ import './index.scss';
 import Navbar from '../../UI/Navbar';
 import AdSection from '../../UI/AdSection';
 import { Container } from '@material-ui/core';
+import FeaturesSection from '../../UI/FeaturesSection';
 
 const App = () => {
   return (
     <>
-      <VectorBackground className="vector-bg" />
+    <Container>
+   <VectorBackground className="vector-bg" />
              <div className="content">
         <Navbar />
         <AdSection />
+        <FeaturesSection />
       </div>
+    </Container>
+   
     </>
   );
 }
