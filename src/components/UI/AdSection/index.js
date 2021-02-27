@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
         textAlign: 'center',
         color: theme.palette.text.secondary,
         boxShadow: 'none',
-        height: 'fit-content',
+        height: '100%',
     },
     row: {
         height: '100%'
