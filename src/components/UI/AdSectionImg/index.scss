@@ -1,9 +1,9 @@
-.adsection-img{
-    background-image: url('../../../assets/images/adsection-right.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+.adsection-img-wrapper{
     width: 100%;
-    height: 121%;
-    margin-right: 24%;
+    height: 100%;
+}
+
+.adsection-img{
+    height: auto;
+    max-width: 100%;
 }

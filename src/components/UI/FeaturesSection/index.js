@@ -16,6 +16,7 @@ const useStyles = makeStyles((theme) => ({
   },
   row: {
     width: "100%",
+    margin: 0,
   },
   paper: {
     padding: theme.spacing(2),
@@ -42,7 +43,7 @@ function FeaturesSection() {
         quis urna et.
       </div>
       <div className="features-cols">
-        <Grid container spacing={3} className={classes.row}>
+        <Grid container spacing={5} className={classes.row}>
           <Grid item xs={12} md={4} lg={4}>
             <Paper className={classes.paper}>
               <FeatureCard

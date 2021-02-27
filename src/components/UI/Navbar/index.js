@@ -13,6 +13,7 @@ const useStyles = makeStyles((theme) => ({
     },
     logo: {
       flexGrow: 1,
+      marginLeft: 65
     },
   }));
 
@@ -20,7 +21,7 @@ const Navbar = () => {
     const classes = useStyles();
 
     return (
-        <div className={classes.root}>
+      <div className={classes.root}>
        <AppBar position="static" className='appbar-wrapper'>
         <Toolbar>
           <div className={classes.logo}>
@@ -32,7 +33,7 @@ const Navbar = () => {
           <Button>Pricing</Button>
           <Button>Developers</Button>
           <Button>Contact</Button>
-          <Button className="isMobile">Try now</Button>
+          <Button className="isMobile selected">Try now</Button>
         </Toolbar>
       </AppBar> 
         </div>

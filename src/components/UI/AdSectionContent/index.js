@@ -8,7 +8,7 @@ function AdSectionContent() {
         <div className="adsection-content-wrapper">
             <div className="adsection-content">
                 <div className="desc-img-wrapper">
-                    <AdSectionDescription width={650} />
+                    <AdSectionDescription width='100%'/>
                 </div>
                 <div className="text-wrapper">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget bibendum faucibus consequat semper integer ornare. Elementum enim id sed pellentesque donec turpis neque, eget a. Fames.

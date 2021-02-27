@@ -1,13 +1,14 @@
 .featuresection-wrapper{
     width: 100%;
     text-align: center;
-    margin-top: 25px;
+    margin-top: 120px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     background-color: #FBFBFD;
     border-radius: 36px;
+    padding: 50px 0px;
 }
 
 .featuresection-title{
@@ -20,7 +21,7 @@
     font-size: 16px;
     color: #343D48;
     margin-top: 10px;
-    width: 40%;
+    width: 50%;
 }
 
 .features-cols{
@@ -36,8 +37,8 @@
     color: #fff;
     border: none;
     background-color: #6337BE;
-    width: 210px;
-    height: 56px;
+    width: 180px;
+    height: 47px;
     font-family: 'Poppins-semibold';
     font-size: 14px;
     border-radius: 6px;
