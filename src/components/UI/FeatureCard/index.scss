@@ -52,3 +52,28 @@
         line-height: 30px;
     }
 }
+
+@media screen and (min-width: 478px) and (max-width: 1000px), (max-width: 1200px){
+    .feature-card{
+        padding: 0px;
+        display: block;
+    }
+
+    .feature-card-icon{
+        margin-bottom: 5px;
+        svg{
+            width: 18px;
+        }
+    }
+
+    .feature-card-title{
+        font-size: 13px;
+        line-height: 25px
+    }
+
+    .feature-card-desc{
+        font-size: 12px;
+        line-height: 25px;
+        word-break: break-all;
+    }
+}

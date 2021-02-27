@@ -53,3 +53,25 @@
     font-size: 12px;
    }
   }
+
+  @media screen and (min-width: 478px) and  (max-width: 1000px) {
+    .adsection-content{
+        padding-left: 0px;
+    }
+
+    .text-wrapper{
+        font-size: 12px;
+        margin-top: -40px;
+        line-height: 24px;
+  } 
+
+  .button-wrapper{
+      margin-top: 11px;
+  }
+
+  .adsection-button{
+      width: 100px;
+      height: 35px;
+      font-size: 12px;
+  }
+}

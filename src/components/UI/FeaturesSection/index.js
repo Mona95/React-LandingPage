@@ -48,7 +48,7 @@ function FeaturesSection() {
       </div>
       <div className="features-cols">
         <Grid container spacing={5} className={classes.row}>
-          <Grid item xs={12} md={4} lg={4}>
+          <Grid item xs={12} sm={4}>
             <Paper className={classes.paper}>
               <FeatureCard
                 icon={{icon: <IntegrationIcon />, bgColor:'#EFECF9'}}
@@ -60,7 +60,7 @@ function FeaturesSection() {
               </FeatureCard>
             </Paper>
           </Grid>
-          <Grid item xs={12} md={4} lg={4}>
+          <Grid item xs={12} sm={4}>
             <Paper
               style={{ boxShadow: "0px 70px 106px rgba(60, 52, 81, 0.12)", border: 'none' }}
               className={classes.paper}
@@ -75,7 +75,7 @@ function FeaturesSection() {
               </FeatureCard>
             </Paper>
           </Grid>
-          <Grid item xs={12} md={4} lg={4}>
+          <Grid item xs={12} sm={4}>
             <Paper className={classes.paper}>
               <FeatureCard icon={{icon : <SupportIcon />, bgColor: '#FFF7EE'}} title="Amazing Support">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.

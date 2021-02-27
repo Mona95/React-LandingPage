@@ -20,3 +20,17 @@
         display: none;
     }
   } 
+
+  @media screen and (min-width: 478px) and  (max-width: 1000px){
+    .vector-bg{
+        height: 509px;
+        width: 1043px;
+    }
+  }
+
+  @media screen and (max-width:1200px){
+      .vector-bg{
+          height: 622px;
+          width: 1261px;
+      }
+  }

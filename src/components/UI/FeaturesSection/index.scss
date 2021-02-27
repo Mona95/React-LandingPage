@@ -76,3 +76,30 @@
     }
 
 }
+
+@media screen and (min-width: 478px) and (max-width: 1000px) {
+
+    .featuresection-title{
+        font-size: 26px;
+    }
+
+    .featuresection-subtitle{
+        font-size: 12px;
+        width: 70%;
+        line-height: 24px;
+    }
+
+    .features-cols{
+        margin-top: 5px;
+    }
+
+    .featuresection-button{
+        margin-top: 25px;
+    }
+
+    .trynow-btn{
+        width: 100px;
+        height: 35px;
+        font-size: 12px;
+    }
+}
