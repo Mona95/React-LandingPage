@@ -21,13 +21,17 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     padding: theme.spacing(2),
     textAlign: "left",
-    border: "none",
     boxShadow: "none",
     borderRadius: 22,
+    border: 'none',
     "&:hover": {
       transition: "300ms",
       filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
     },
+    "@media screen and (max-width: 478px)":{
+      border: '1px solid #EBF2FA',
+      textAlign:'center'
+    }
   },
 }));
 
@@ -58,12 +62,12 @@ function FeaturesSection() {
           </Grid>
           <Grid item xs={12} md={4} lg={4}>
             <Paper
-              style={{ boxShadow: "0px 70px 106px rgba(60, 52, 81, 0.12)" }}
+              style={{ boxShadow: "0px 70px 106px rgba(60, 52, 81, 0.12)", border: 'none' }}
               className={classes.paper}
             >
               <FeatureCard
                 icon={{icon: <MethodsIcon />, bgColor: '#FFEDED'}}
-                title=" Advanced Software Methods"
+                title="Advanced Software Methods"
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Porttitor quisque nisl, sed ut. Sollicitudin at tincidunt

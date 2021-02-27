@@ -10,11 +10,7 @@ import './index.scss';
 const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
-    },
-    logo: {
-      flexGrow: 1,
-      marginLeft: 65
-    },
+    }
   }));
 
 const Navbar = () => {
@@ -24,7 +20,7 @@ const Navbar = () => {
       <div className={classes.root}>
        <AppBar position="static" className='appbar-wrapper'>
         <Toolbar>
-          <div className={classes.logo}>
+          <div className="logo-wrapper">
             <Logo />
           </div>
           <Button>Who we help</Button>

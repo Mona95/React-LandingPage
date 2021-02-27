@@ -1,6 +1,6 @@
 .feature-card{
-    height: 273px;
-    padding: 15px;
+    height: 244px;
+    padding: 5px;
 }
 
 .feature-card-icon{
@@ -29,4 +29,25 @@
     font-family: 'Poppins-regular';
     font-weight: normal;
     line-height: 32px;
+}
+
+@media screen and (max-width: 478px) {
+    .feature-card-icon{
+        margin:auto;
+        margin-bottom: 15px;
+        padding: 5px 15px;
+
+        svg{
+            width: 30px;
+        }
+    }
+
+    .feature-card-title{
+        font-size: 14px;
+    }
+
+    .feature-card-desc{
+        font-size: 12px;
+        line-height: 30px;
+    }
 }

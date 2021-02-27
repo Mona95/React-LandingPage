@@ -35,11 +35,17 @@
     }
 }
 
-@media screen and (max-width: 375px) {
+.logo-wrapper{
+    flex-grow: 1;
+    margin-left: 65px;
+}
+
+// IPhone 8 and smaller screens
+@media screen and (max-width: 478px) {
     .appbar-wrapper {
       background-color: #fff !important;
       padding:10px 0px;
-
+        border-bottom: 1px solid #f3f3fc;
       button{
           display: none;
       }
@@ -47,5 +53,9 @@
       button.isMobile{
           display: block ;
       }
+    }
+
+    .logo-wrapper{
+        margin-left: 1px;
     }
   } 

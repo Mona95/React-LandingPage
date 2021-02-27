@@ -1,5 +1,14 @@
 .adsection-wrapper{
-    height: 450px;
     padding: 10px;
     margin-top: 70px;
 }
+
+@media screen and (max-width: 478px) {
+    .adsection-wrapper{
+        background-color: #FBFBFD;
+        margin-top: 0px;
+    }
+    .isMobile{
+        display: none;
+    }
+  }

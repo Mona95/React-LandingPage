@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
         textAlign: 'center',
         color: theme.palette.text.secondary,
         boxShadow: 'none',
-        height: '100%',
+        height: 'fit-content',
     },
     row: {
         height: '100%'
@@ -38,7 +38,7 @@ const AdSection = () => {
                     <Grid item xs={12} md={8} lg={6}>
                         <Paper className={classes.paper}><AdSectionContent /></Paper>
                     </Grid>
-                    <Grid item xs={12} md={4} lg={6}>
+                    <Grid className="isMobile" item xs={12} md={4} lg={6}>
                         <Paper className={classes.paper}><AdSectionImg /></Paper>
                     </Grid>
                 </Grid>

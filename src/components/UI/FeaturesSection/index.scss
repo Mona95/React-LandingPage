@@ -44,3 +44,35 @@
     border-radius: 6px;
     cursor: pointer;
 }
+
+@media screen and (max-width: 478px) {
+    .featuresection-wrapper{
+        background-color: transparent;
+        margin-top: -20px;
+    }
+
+    .featuresection-title{
+        font-size: 26px;
+    }
+
+    .featuresection-subtitle{
+        font-size: 12px;
+        width: 85%;
+        line-height: 24px;
+    }
+
+    .features-cols{
+        margin-top: 5px;
+    }
+
+    .featuresection-button{
+        margin-top: 25px;
+    }
+
+    .trynow-btn{
+        width: 120px;
+        height: 42px;
+        font-size: 12px;
+    }
+
+}
