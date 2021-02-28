@@ -1,16 +1,18 @@
-import React from 'react'
-import AdSectionRightImage from '../../../assets/images/adsection-right.png';
+import React from "react";
+import AdSectionRightImage from "../../../assets/images/adsection-right.png";
 
-import './index.scss'
+import "./index.scss";
 
 function AdSectionImg() {
-    return (
-        <div className="adsection-img-wrapper">
-        <img className="adsection-img" alt="adsection-img" src={AdSectionRightImage} />
-        </div>
-    )
+  return (
+    <div className="adsection-img-wrapper">
+      <img
+        className="adsection-img"
+        alt="adsection-img"
+        src={AdSectionRightImage}
+      />
+    </div>
+  );
 }
 
-export default AdSectionImg
-
-
+export default AdSectionImg;

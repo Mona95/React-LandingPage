@@ -4,7 +4,8 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Button from "@material-ui/core/Button";
 import { Logo } from "../../../assets/images";
-import { useMediaQuery } from 'react-responsive'
+import { useMediaQuery } from "react-responsive";
+import { v4 as uuidv4 } from "uuid";
 
 import "./index.scss";
 import MoreButton from "../MoreButton";
@@ -18,7 +19,16 @@ const useStyles = makeStyles((theme) => ({
 const Navbar = () => {
   const classes = useStyles();
 
-  const isTabletOrMobile = useMediaQuery({ maxWidth: 980 })
+  const isTabletOrMobile = useMediaQuery({ maxWidth: 980 });
+
+  const navMenuItems = [
+    "Who we help",
+    "Features",
+    "Integrations",
+    "Pricing",
+    "Developers",
+    "Contact",
+  ];
 
   return (
     <div className={classes.root}>
@@ -29,18 +39,17 @@ const Navbar = () => {
           </div>
           {!isTabletOrMobile && (
             <>
-              <Button>Who we help</Button>
-              <Button>Features</Button>
-              <Button>Integrations</Button>
-              <Button>Pricing</Button>
-              <Button>Developers</Button>
-              <Button>Contact</Button>
+              {navMenuItems.map((item) => (
+                <Button key={uuidv4()}>{item}</Button>
+              ))}
             </>
           )}
 
           <Button className="isMobile selected">Try now</Button>
 
-          {isTabletOrMobile && <MoreButton btnCls="isMobile" />}
+          {isTabletOrMobile && (
+            <MoreButton menuItems={navMenuItems} btnCls="isMobile" />
+          )}
         </Toolbar>
       </AppBar>
     </div>

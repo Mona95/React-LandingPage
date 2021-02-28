@@ -1,100 +1,98 @@
-@import '../../../styles/variables';
-@import '../../../styles/mixins';
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
 
-.featuresection-wrapper{
-    width: 100%;
-    text-align: center;
-    margin-top: 70px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    background-color: $main-light-background;
-    border-radius: 36px;
-    padding: 50px 0px;
+.featuresection-wrapper {
+  width: 100%;
+  text-align: center;
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: $main-light-background;
+  border-radius: 36px;
+  padding: 50px 0px;
 }
 
-.featuresection-title{
-    font-family: $font-poppins-semibold;
-    font-size: 30px;
+.featuresection-title {
+  font-family: $font-poppins-semibold;
+  font-size: 30px;
 }
 
-.featuresection-subtitle{
-    font-family: $font-poppins-regular;
-    font-size: 16px;
-    color: $main-gray;
-    margin-top: 10px;
-    width: 50%;
+.featuresection-subtitle {
+  font-family: $font-poppins-regular;
+  font-size: 16px;
+  color: $main-gray;
+  margin-top: 10px;
+  width: 50%;
 }
 
-.features-cols{
-    margin-top: 40px;
-    width: 100%;
+.features-cols {
+  margin-top: 40px;
+  width: 100%;
 }
 
-.featuresection-button-wrapper{
-    margin-top: 70px;
+.featuresection-button-wrapper {
+  margin-top: 70px;
 }
 
-.featuresection-button{
-    @include button($white, $main-purple, 180px, 47px);
-    font-family: $font-poppins-semibold;
-    font-size: 14px;
+.featuresection-button {
+  @include button($white, $main-purple, 180px, 47px);
+  font-family: $font-poppins-semibold;
+  font-size: 14px;
 }
 
 @media screen and (max-width: 478px) {
-    .featuresection-wrapper{
-        background-color: transparent;
-        margin-top: -20px;
-    }
+  .featuresection-wrapper {
+    background-color: transparent;
+    margin-top: -20px;
+  }
 
-    .featuresection-title{
-        font-size: 26px;
-    }
+  .featuresection-title {
+    font-size: 26px;
+  }
 
-    .featuresection-subtitle{
-        font-size: 12px;
-        width: 85%;
-        line-height: 24px;
-    }
+  .featuresection-subtitle {
+    font-size: 12px;
+    width: 85%;
+    line-height: 24px;
+  }
 
-    .features-cols{
-        margin-top: 5px;
-    }
+  .features-cols {
+    margin-top: 5px;
+  }
 
-    .featuresection-button-wrapper{
-        margin-top: 25px;
-    }
+  .featuresection-button-wrapper {
+    margin-top: 25px;
+  }
 
-    .featuresection-button{
-        @include button($white, $main-purple, 120px, 42px);
-        font-size: 12px;
-    }
-
+  .featuresection-button {
+    @include button($white, $main-purple, 120px, 42px);
+    font-size: 12px;
+  }
 }
 
 @media screen and (min-width: 478px) and (max-width: 1000px) {
+  .featuresection-title {
+    font-size: 26px;
+  }
 
-    .featuresection-title{
-        font-size: 26px;
-    }
+  .featuresection-subtitle {
+    font-size: 12px;
+    width: 70%;
+    line-height: 24px;
+  }
 
-    .featuresection-subtitle{
-        font-size: 12px;
-        width: 70%;
-        line-height: 24px;
-    }
+  .features-cols {
+    margin-top: 5px;
+  }
 
-    .features-cols{
-        margin-top: 5px;
-    }
+  .featuresection-button-wrapper {
+    margin-top: 25px;
+  }
 
-    .featuresection-button-wrapper{
-        margin-top: 25px;
-    }
-
-    .featuresection-button{
-        @include button($white, $main-purple, 100px, 35px);
-        font-size: 12px;
-    }
+  .featuresection-button {
+    @include button($white, $main-purple, 100px, 35px);
+    font-size: 12px;
+  }
 }

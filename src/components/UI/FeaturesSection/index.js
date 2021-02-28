@@ -3,7 +3,11 @@ import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import FeatureCard from "../FeatureCard";
-import {IntegrationIcon, MethodsIcon, SupportIcon } from "../../../assets/images";
+import {
+  IntegrationIcon,
+  MethodsIcon,
+  SupportIcon,
+} from "../../../assets/images";
 
 import "./index.scss";
 
@@ -22,15 +26,15 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: "none",
     borderRadius: 22,
     minWidth: 110,
-    border: 'none',
+    border: "none",
     "&:hover": {
       transition: "300ms",
       filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
     },
-    "@media screen and (max-width: 478px)":{
-      border: '1px solid #EBF2FA',
-      textAlign:'center'
-    }
+    "@media screen and (max-width: 478px)": {
+      border: "1px solid #EBF2FA",
+      textAlign: "center",
+    },
   },
 }));
 
@@ -50,7 +54,7 @@ function FeaturesSection() {
           <Grid item xs={12} sm={4}>
             <Paper className={classes.paper}>
               <FeatureCard
-                icon={{icon: <IntegrationIcon />, bgColor:'#EFECF9'}}
+                icon={{ icon: <IntegrationIcon />, bgColor: "#EFECF9" }}
                 title="Seamless Integration"
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -61,11 +65,14 @@ function FeaturesSection() {
           </Grid>
           <Grid item xs={12} sm={4}>
             <Paper
-              style={{ boxShadow: "0px 70px 106px rgba(60, 52, 81, 0.12)", border: 'none' }}
+              style={{
+                boxShadow: "0px 70px 106px rgba(60, 52, 81, 0.12)",
+                border: "none",
+              }}
               className={classes.paper}
             >
               <FeatureCard
-                icon={{icon: <MethodsIcon />, bgColor: '#FFEDED'}}
+                icon={{ icon: <MethodsIcon />, bgColor: "#FFEDED" }}
                 title="Advanced Software Methods"
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -76,7 +83,10 @@ function FeaturesSection() {
           </Grid>
           <Grid item xs={12} sm={4}>
             <Paper className={classes.paper}>
-              <FeatureCard icon={{icon : <SupportIcon />, bgColor: '#FFF7EE'}} title="Amazing Support">
+              <FeatureCard
+                icon={{ icon: <SupportIcon />, bgColor: "#FFF7EE" }}
+                title="Amazing Support"
+              >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Porttitor quisque nisl, sed ut. Sollicitudin at tincidunt
                 interdum.

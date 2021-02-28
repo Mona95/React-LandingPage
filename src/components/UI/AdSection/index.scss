@@ -1,22 +1,21 @@
-@import '../../../styles/variables';
+@import "../../../styles/variables";
 
-.adsection-wrapper{
-    padding: 10px;
+.adsection-wrapper {
+  padding: 10px;
 }
 
 @media screen and (max-width: 478px) {
-    .adsection-wrapper{
-        background-color: $main-light-background;
-        margin-top: 0px;
-    }
-    .isMobile{
-        display: none;
-    }
+  .adsection-wrapper {
+    background-color: $main-light-background;
+    margin-top: 0px;
   }
-
-  @media screen and (min-width: 478px) and (max-width: 600px) {
-
-    .isMobile{
-        display: none;
-    }
+  .isMobile {
+    display: none;
   }
+}
+
+@media screen and (min-width: 478px) and (max-width: 600px) {
+  .isMobile {
+    display: none;
+  }
+}

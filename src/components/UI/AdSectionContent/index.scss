@@ -1,77 +1,76 @@
-@import '../../../styles/variables';
-@import '../../../styles/mixins';
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
 
-.adsection-content-wrapper{
-    text-align: left;
+.adsection-content-wrapper {
+  text-align: left;
 }
 
-.adsection-content{
-    padding-left: 24%;
+.adsection-content {
+  padding-left: 24%;
 }
 
-.text-wrapper{
-    font-family: $font-manrope-regular;
-    font-size: 16px;
-    margin-top:-15px;
-    color: $main-gray;
-    line-height: 30px;
-
+.text-wrapper {
+  font-family: $font-manrope-regular;
+  font-size: 16px;
+  margin-top: -15px;
+  color: $main-gray;
+  line-height: 30px;
 }
 
-.button-wrapper{
-    margin-top: 25px;
+.button-wrapper {
+  margin-top: 25px;
 }
 
-.adsection-button{
-    @include button($white, $main-purple, 180px, 47px, true);
-    font-family: $font-poppins-semibold;
-    font-size: 14px;
+.adsection-button {
+  @include button($white, $main-purple, 180px, 47px, true);
+  font-family: $font-poppins-semibold;
+  font-size: 14px;
 }
 
 @media screen and (max-width: 478px) {
-   .adsection-content{
-       text-align: center;
-       padding: 15px 10px;
-   }
+  .adsection-content {
+    text-align: center;
+    padding: 15px 10px;
+  }
 
-   .text-wrapper{
-       font-size: 12px;
-       margin-top: 0px;
-   }
+  .text-wrapper {
+    font-size: 12px;
+    margin-top: 0px;
+  }
 
-   .button-wrapper{
-       margin: 20px 0px;
-   }
+  .button-wrapper {
+    margin: 20px 0px;
+  }
 
-   .adsection-button{
+  .adsection-button {
     @include button($white, $main-purple, 120px, 40px);
     font-size: 12px;
-   }
-  }
-
-  @media screen and (min-width: 479px) and  (max-width: 1000px) {
-    .adsection-content{
-        padding-left: 0px;
-    }
-
-    .text-wrapper{
-        font-size: 12px;
-        margin-top: -40px;
-        line-height: 24px;
-  } 
-
-  .button-wrapper{
-      margin-top: 11px;
-  }
-
-  .adsection-button{
-    @include button($white, $main-purple, 100px, 35px);
-      font-size: 12px;
   }
 }
 
-@media screen and (min-width:1000px) and (max-width:1200px){
-    .text-wrapper{
-        margin-top: -44px;
-    }
+@media screen and (min-width: 479px) and (max-width: 1000px) {
+  .adsection-content {
+    padding-left: 0px;
+  }
+
+  .text-wrapper {
+    font-size: 12px;
+    margin-top: -40px;
+    line-height: 24px;
+  }
+
+  .button-wrapper {
+    margin-top: 11px;
+  }
+
+  .adsection-button {
+    @include button($white, $main-purple, 100px, 35px);
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .text-wrapper {
+    margin-top: -44px;
+  }
 }
