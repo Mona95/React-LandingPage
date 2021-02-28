@@ -87,8 +87,8 @@ function FeaturesSection() {
           </Grid>
         </Grid>
       </div>
-      <div className="featuresection-button">
-        <button className="trynow-btn">Try Now</button>
+      <div className="featuresection-button-wrapper">
+        <button className="featuresection-button">Try Now</button>
       </div>
     </div>
   );
