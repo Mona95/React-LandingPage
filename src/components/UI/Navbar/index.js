@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Button from "@material-ui/core/Button";
 import { ReactComponent as Logo } from "../../../assets/images/logo.svg";
+import { useMediaQuery } from 'react-responsive'
 
 import "./index.scss";
 import MoreButton from "../MoreButton";
@@ -17,13 +18,7 @@ const useStyles = makeStyles((theme) => ({
 const Navbar = () => {
   const classes = useStyles();
 
-  const [isTablet, setIsTablet] = useState(false);
-  
-  useEffect(() => {
-    window.addEventListener("resize", () => {
-      setIsTablet(window.outerWidth <= 980);
-    });
-  });
+  const isTabletOrMobile = useMediaQuery({ maxWidth: 980 })
 
   return (
     <div className={classes.root}>
@@ -32,7 +27,7 @@ const Navbar = () => {
           <div className="logo-wrapper">
             <Logo />
           </div>
-          {!isTablet && (
+          {!isTabletOrMobile && (
             <>
               <Button>Who we help</Button>
               <Button>Features</Button>
@@ -45,7 +40,7 @@ const Navbar = () => {
 
           <Button className="isMobile selected">Try now</Button>
 
-          {isTablet && <MoreButton btnCls="isMobile" />}
+          {isTabletOrMobile && <MoreButton btnCls="isMobile" />}
         </Toolbar>
       </AppBar>
     </div>

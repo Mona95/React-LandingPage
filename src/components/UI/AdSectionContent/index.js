@@ -1,17 +1,14 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
+import { useMediaQuery } from 'react-responsive'
 import { ReactComponent as AdSectionDescription } from '../../../assets/images/adsection-left.svg'
 import { ReactComponent as AdSectionDescriptionSmall } from '../../../assets/images/adsection-left-small.svg'
 
 import './index.scss'
 
 function AdSectionContent() {
-    const [isMobile, setIsMobile] = useState(false);
 
-    useEffect(() => {
-       window.addEventListener('resize', () => {
-           setIsMobile(window.outerWidth <= 478)
-      })
-    })
+    const isMobile = useMediaQuery({ maxWidth: 478 })
+
     return (
         <div className="adsection-content-wrapper">
             <div className="adsection-content">
