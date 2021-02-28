@@ -38,10 +38,10 @@ const AdSection = () => {
         <div className="adsection-wrapper">
             <div className={classes.root}>
                 <Grid container spacing={3} className={classes.row}>
-                    <Grid item sm={6}>
+                    <Grid item xs={12} sm={6}>
                         <Paper className={classes.paper}><AdSectionContent /></Paper>
                     </Grid>
-                    <Grid className="isMobile" item sm={6}>
+                    <Grid className="isMobile" item xs={6} sm={6}>
                         <Paper className={classes.paper}><AdSectionImg /></Paper>
                     </Grid>
                 </Grid>

@@ -11,3 +11,10 @@
         display: none;
     }
   }
+
+  @media screen and (min-width: 478px) and (max-width: 600px) {
+
+    .isMobile{
+        display: none;
+    }
+  }

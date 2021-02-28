@@ -23,14 +23,14 @@
 
   @media screen and (min-width: 478px) and  (max-width: 1000px){
     .vector-bg{
-        height: 509px;
+        height: 446px;
         width: 1043px;
     }
   }
 
-  @media screen and (max-width:1200px){
+  @media screen and (min-width: 1000px) and (max-width:1200px){
       .vector-bg{
-          height: 622px;
+          height: 566px;
           width: 1261px;
       }
   }

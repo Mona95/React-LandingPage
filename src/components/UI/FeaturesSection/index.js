@@ -23,6 +23,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
     boxShadow: "none",
     borderRadius: 22,
+    minWidth: 110,
     border: 'none',
     "&:hover": {
       transition: "300ms",

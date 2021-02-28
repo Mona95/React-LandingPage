@@ -54,7 +54,7 @@
    }
   }
 
-  @media screen and (min-width: 478px) and  (max-width: 1000px) {
+  @media screen and (min-width: 479px) and  (max-width: 1000px) {
     .adsection-content{
         padding-left: 0px;
     }
@@ -74,4 +74,10 @@
       height: 35px;
       font-size: 12px;
   }
+}
+
+@media screen and (min-width:1000px) and (max-width:1200px){
+    .text-wrapper{
+        margin-top: -44px;
+    }
 }

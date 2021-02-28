@@ -1,7 +1,6 @@
 .feature-card{
     height: 225px;
     padding: 5px;
-    display: grid;
 }
 
 .feature-card-icon{
@@ -32,7 +31,7 @@
     line-height: 32px;
 }
 
-@media screen and (max-width: 478px) {
+@media screen and (max-width: 478px), screen and (min-width: 478px) and (max-width:600px) {
     .feature-card-icon{
         margin:auto;
         margin-bottom: 15px;
@@ -53,7 +52,7 @@
     }
 }
 
-@media screen and (min-width: 478px) and (max-width: 1000px), (max-width: 1200px){
+@media screen and (min-width: 600px) and (max-width: 900px){
     .feature-card{
         padding: 0px;
         display: block;
@@ -67,13 +66,26 @@
     }
 
     .feature-card-title{
+        font-size: 11px;
+        line-height: 18px
+    }
+
+    .feature-card-desc{
+        font-size: 11px;
+        line-height: 18px;
+        word-break: break-all;
+    }
+}
+
+@media screen and (min-width:900px) and (max-width: 1200px){
+    .feature-card-title{
         font-size: 13px;
-        line-height: 25px
+        line-height: 30px
     }
 
     .feature-card-desc{
         font-size: 12px;
-        line-height: 25px;
+        line-height: 20px;
         word-break: break-all;
     }
 }
