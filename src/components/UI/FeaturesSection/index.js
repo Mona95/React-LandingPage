@@ -3,9 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import FeatureCard from "../FeatureCard";
-import { ReactComponent as IntegrationIcon } from "../../../assets/images/fcard-1.svg";
-import { ReactComponent as MethodsIcon } from "../../../assets/images/fcard-2.svg";
-import { ReactComponent as SupportIcon } from "../../../assets/images/fcard-3.svg";
+import {IntegrationIcon, MethodsIcon, SupportIcon } from "../../../assets/images";
 
 import "./index.scss";
 

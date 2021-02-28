@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Button from "@material-ui/core/Button";
-import { ReactComponent as Logo } from "../../../assets/images/logo.svg";
+import { Logo } from "../../../assets/images";
 import { useMediaQuery } from 'react-responsive'
 
 import "./index.scss";

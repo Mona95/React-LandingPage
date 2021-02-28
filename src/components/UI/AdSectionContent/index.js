@@ -1,7 +1,6 @@
 import React from 'react'
 import { useMediaQuery } from 'react-responsive'
-import { ReactComponent as AdSectionDescription } from '../../../assets/images/adsection-left.svg'
-import { ReactComponent as AdSectionDescriptionSmall } from '../../../assets/images/adsection-left-small.svg'
+import { AdSectionDescription, AdSectionDescriptionSmall } from '../../../assets/images'
 
 import './index.scss'
 
