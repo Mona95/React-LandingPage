@@ -1,3 +1,5 @@
+@import '../../../styles/variables';
+
 .feature-card{
     height: 225px;
     padding: 5px;
@@ -16,17 +18,17 @@
 }
 
 .feature-card-title{
-    color: #0F2137;
-    font-family: 'Poppins-regular';
+    color: $main-dark;
+    font-family: $font-poppins-regular;
     font-weight: 600;
     font-size: 18px;
     line-height: 36px;
 }
 
 .feature-card-desc{
-    color: #343D48 ;
+    color: $main-gray ;
     font-size: 14px;
-    font-family: 'Poppins-regular';
+    font-family: $font-poppins-regular;
     font-weight: normal;
     line-height: 32px;
 }

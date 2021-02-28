@@ -1,19 +1,21 @@
+@import '../../../styles/variables';
+
 .more-btn{
     &:hover, &:focus{
         background-color: transparent !important;
-        color: #000 !important;
+        color: $black !important;
     }
 }
 
 .more-btn-menu{
     li {
-        font-family: 'Poppins-semibold';
+        font-family: $font-poppins-semibold;
         font-size: 14px;
         padding: 10px 25px;
 
         &:hover{
-            background-color: #1AC587 !important;
-            color: #fff !important;
+            background-color: $main-green !important;
+            color: $white !important;
         }
     }
 }

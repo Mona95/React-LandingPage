@@ -1,35 +1,36 @@
+@import '../../../styles/variables';
 
 .appbar-wrapper{
     background-color: transparent !important;
     box-shadow: none !important;
     padding-top: 10px;
     button {
-        color: #0F2137;
+        color: $main-dark;
         font-size: 14px;
         font-weight: bold;
         font-style: normal;
         text-transform: none;
-        font-family: 'Manrope-regular';
+        font-family: $font-manrope-regular;
         padding: 15px 10px;
         margin: 1px;
         line-height: 19.12px;
         width: 127px;
 
         &:hover, &:focus{
-           background-color: #1AC587; 
+           background-color: $main-green; 
            border-radius: 6px;
-           color: #fff;
-            font-family: 'Poppins-regular';
+           color: $white;
+            font-family: $font-poppins-regular;
             line-height: 18px;
-            //letter-spacing: -1%;
+            letter-spacing: -1%;
         }
     }
 
     button.selected{
-        background-color: #1AC587; 
+        background-color: $main-green; 
         border-radius: 6px;
-        color: #fff;
-         font-family: 'Poppins-regular';
+        color: $white;
+         font-family: $font-poppins-regular;
          line-height: 18px;
          letter-spacing: -1%;
     }
@@ -43,9 +44,9 @@
 // IPhone 8 and smaller screens
 @media screen and (max-width: 478px) {
     .appbar-wrapper {
-      background-color: #fff !important;
+      background-color: $white !important;
       padding:10px 0px;
-        border-bottom: 1px solid #f3f3fc;
+        border-bottom: 1px solid $main-light-gray;
       button{
           display: none;
       }

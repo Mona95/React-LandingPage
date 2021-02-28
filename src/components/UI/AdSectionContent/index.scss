@@ -1,3 +1,5 @@
+@import '../../../styles/variables';
+
 .adsection-content-wrapper{
     text-align: left;
 }
@@ -7,10 +9,10 @@
 }
 
 .text-wrapper{
-    font-family: 'Manrope-regular';
+    font-family: $font-manrope-regular;
     font-size: 16px;
     margin-top:-15px;
-    color: #343D48;
+    color: $main-gray;
     line-height: 30px;
 
 }
@@ -20,12 +22,12 @@
 }
 
 .adsection-button{
-    color: #fff;
+    color: $white;
     border: none;
-    background-color: #6337BE;
+    background-color: $main-purple;
     width: 180px;
     height: 47px;
-    font-family: 'Poppins-semibold';
+    font-family: $font-poppins-semibold;
     font-size: 14px;
     border-radius: 6px;
     cursor: pointer;
