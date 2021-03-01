@@ -35,11 +35,11 @@
             |
             └─── UI
                 |
-                └─── AdSection
+                └─── MainBanner
                 |
-                └─── AdSectionContent
+                └─── MainBannerContent
                 |
-                └─── AdSectionImg
+                └─── MainBannerImg
                 |
                 └─── FeatureCard
                 |

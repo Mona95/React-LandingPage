@@ -3,8 +3,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 
-import AdSectionImg from "../AdSectionImg";
-import AdSectionContent from "../AdSectionContent";
+import MainBannerImg from "../MainBannerImg";
+import MainBannerContent from "../MainBannerContent";
 import "./index.scss";
 
 const useStyles = makeStyles((theme) => ({
@@ -31,21 +31,21 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const AdSection = () => {
+const MainBanner = () => {
   const classes = useStyles();
 
   return (
-    <div className="adsection-wrapper">
+    <div className="mainbanner-wrapper">
       <div className={classes.root}>
         <Grid container spacing={3} className={classes.row}>
           <Grid item xs={12} sm={6}>
             <Paper className={classes.paper}>
-              <AdSectionContent />
+              <MainBannerContent />
             </Paper>
           </Grid>
           <Grid className="isMobile" item xs={6} sm={6}>
             <Paper className={classes.paper}>
-              <AdSectionImg />
+              <MainBannerImg />
             </Paper>
           </Grid>
         </Grid>
@@ -54,4 +54,4 @@ const AdSection = () => {
   );
 };
 
-export default AdSection;
+export default MainBanner;

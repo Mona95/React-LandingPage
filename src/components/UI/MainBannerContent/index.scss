@@ -1,11 +1,11 @@
 @import "../../../styles/variables";
 @import "../../../styles/mixins";
 
-.adsection-content-wrapper {
+.mainbanner-content-wrapper {
   text-align: left;
 }
 
-.adsection-content {
+.mainbanner-content {
   padding-left: 24%;
 }
 
@@ -21,14 +21,14 @@
   margin-top: 25px;
 }
 
-.adsection-button {
+.mainbanner-button {
   @include button($white, $main-purple, 180px, 47px, true);
   font-family: $font-poppins-semibold;
   font-size: 14px;
 }
 
 @media screen and (max-width: 478px) {
-  .adsection-content {
+  .mainbanner-content {
     text-align: center;
     padding: 15px 10px;
   }
@@ -42,14 +42,14 @@
     margin: 20px 0px;
   }
 
-  .adsection-button {
+  .mainbanner-button {
     @include button($white, $main-purple, 120px, 40px);
     font-size: 12px;
   }
 }
 
 @media screen and (min-width: 479px) and (max-width: 1000px) {
-  .adsection-content {
+  .mainbanner-content {
     padding-left: 0px;
   }
 
@@ -63,7 +63,7 @@
     margin-top: 11px;
   }
 
-  .adsection-button {
+  .mainbanner-button {
     @include button($white, $main-purple, 100px, 35px);
     font-size: 12px;
   }

@@ -1,23 +1,23 @@
 import React from "react";
 import { useMediaQuery } from "react-responsive";
 import {
-  AdSectionDescription,
-  AdSectionDescriptionSmall,
+  MainBannerDescImage,
+  MainBannerDescImageSmall,
 } from "../../../assets/images";
 
 import "./index.scss";
 
-function AdSectionContent() {
+function MainBannerContent() {
   const isMobile = useMediaQuery({ maxWidth: 478 });
 
   return (
-    <div className="adsection-content-wrapper">
-      <div className="adsection-content">
+    <div className="mainbanner-content-wrapper">
+      <div className="mainbanner-content">
         <div className="desc-img-wrapper">
           {isMobile ? (
-            <AdSectionDescriptionSmall width="100%" />
+            <MainBannerDescImageSmall width="100%" />
           ) : (
-            <AdSectionDescription width="100%" />
+            <MainBannerDescImage width="100%" />
           )}
         </div>
         <div className="text-wrapper">
@@ -26,11 +26,11 @@ function AdSectionContent() {
           pellentesque donec turpis neque, eget a. Fames.
         </div>
         <div className="button-wrapper">
-          <button className="adsection-button">Try Now</button>
+          <button className="mainbanner-button">Try Now</button>
         </div>
       </div>
     </div>
   );
 }
 
-export default AdSectionContent;
+export default MainBannerContent;
