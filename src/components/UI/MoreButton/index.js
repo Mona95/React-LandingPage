@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PropTypes from 'prop-types';
 import Button from "@material-ui/core/Button";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
@@ -46,5 +47,14 @@ const MoreButton = ({ btnCls, menuItems }) => {
     </div>
   );
 };
+
+MoreButton.defaultProps = {
+  btnCls: ""
+}
+
+MoreButton.propTypes = {
+  btnCls : PropTypes.string,
+  menuItems: PropTypes.arrayOf(PropTypes.string).isRequired
+}
 
 export default MoreButton;
