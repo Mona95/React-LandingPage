@@ -3,12 +3,12 @@ import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Button from "@material-ui/core/Button";
+import MoreButton from "../MoreButton";
 import { Logo } from "../../../assets/images";
 import { useMediaQuery } from "react-responsive";
-import { v4 as uuidv4 } from "uuid";
+import { v4 as uuidv4 } from "uuid"; //to generate key values
 
 import "./index.scss";
-import MoreButton from "../MoreButton";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -21,6 +21,7 @@ const Navbar = () => {
 
   const isTabletOrMobile = useMediaQuery({ maxWidth: 980 });
 
+  //array which holds nav menu items
   const navMenuItems = [
     "Who we help",
     "Features",

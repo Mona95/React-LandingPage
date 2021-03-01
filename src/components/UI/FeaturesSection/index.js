@@ -11,6 +11,7 @@ import {
 
 import "./index.scss";
 
+// overriding and customizing the @material-ui/core component's style
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,

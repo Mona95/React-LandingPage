@@ -1,5 +1,9 @@
 @import "../../../styles/variables";
 
+// -------------------------- //
+// -- Feature Card styles  -- //
+// -------------------------- //
+
 .feature-card {
   height: 225px;
   padding: 5px;
@@ -33,6 +37,7 @@
   line-height: 32px;
 }
 
+// for mobile screen sizes
 @media screen and (max-width: 478px),
   screen and (min-width: 478px) and (max-width: 600px) {
   .feature-card-icon {
@@ -55,6 +60,7 @@
   }
 }
 
+// for tablet and small desktop screen sizes
 @media screen and (min-width: 600px) and (max-width: 900px) {
   .feature-card {
     padding: 0px;
@@ -80,6 +86,7 @@
   }
 }
 
+// for normal desktop screen sizes
 @media screen and (min-width: 900px) and (max-width: 1200px) {
   .feature-card-title {
     font-size: 13px;

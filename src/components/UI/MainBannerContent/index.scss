@@ -1,6 +1,10 @@
 @import "../../../styles/variables";
 @import "../../../styles/mixins";
 
+// -------------------------------- //
+// -- Main Banner Content styles -- //
+// -------------------------------- //
+
 .mainbanner-content-wrapper {
   text-align: left;
 }
@@ -27,6 +31,7 @@
   font-size: 14px;
 }
 
+//for mobile and small screen sizes
 @media screen and (max-width: 478px) {
   .mainbanner-content {
     text-align: center;
@@ -48,6 +53,7 @@
   }
 }
 
+//for tablet and small desktop screen sizes
 @media screen and (min-width: 479px) and (max-width: 1000px) {
   .mainbanner-content {
     padding-left: 0px;
@@ -69,6 +75,7 @@
   }
 }
 
+//for desktop and bigger screen sizes
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
   .text-wrapper {
     margin-top: -44px;

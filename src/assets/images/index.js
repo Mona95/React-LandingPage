@@ -1,3 +1,7 @@
+/**
+ * Public export for all the SVG images in the project
+ */
+
 import {ReactComponent as MainBannerDescImageSmall} from './mainbanner-left-small.svg';
 import {ReactComponent as MainBannerDescImage} from './mainbanner-left.svg';
 import {ReactComponent as VectorBackground} from './background.svg';

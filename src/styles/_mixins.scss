@@ -1,3 +1,7 @@
+/**
+* Holds all the mixins used in the project in order to have resuable styles
+**/
+
 @mixin button($color, $bgColor, $width, $height, $hasShadow: false) {
   color: $color;
   border: none;

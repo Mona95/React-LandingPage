@@ -4,7 +4,7 @@ import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { v4 as uuidv4 } from "uuid";
+import { v4 as uuidv4 } from "uuid"; //to generate keys
 
 import "./index.scss";
 

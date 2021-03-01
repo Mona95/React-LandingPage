@@ -1,5 +1,10 @@
 @import "../../../styles/variables";
 
+// -------------------------- //
+// -- App Container styles -- //
+// -------------------------- //
+
+
 .vector-bg {
   z-index: -10;
   position: absolute;
@@ -13,6 +18,7 @@
   padding: 20px 70px;
 }
 
+// mobile screen sizes
 @media screen and (max-width: 478px) {
   .content {
     padding: 0;
@@ -23,6 +29,7 @@
   }
 }
 
+// tablet and smaller desktop screen sizes
 @media screen and (min-width: 478px) and (max-width: 1000px) {
   .vector-bg {
     height: 446px;
@@ -30,6 +37,7 @@
   }
 }
 
+// desktop and bigger screen sizes
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
   .vector-bg {
     height: 566px;

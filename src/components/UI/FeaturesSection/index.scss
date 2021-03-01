@@ -1,6 +1,10 @@
 @import "../../../styles/variables";
 @import "../../../styles/mixins";
 
+// ----------------------------- //
+// -- Features Section styles -- //
+// ----------------------------- //
+
 .featuresection-wrapper {
   width: 100%;
   text-align: center;
@@ -42,6 +46,7 @@
   font-size: 14px;
 }
 
+// for mobile and small screen sizes
 @media screen and (max-width: 478px) {
   .featuresection-wrapper {
     background-color: transparent;
@@ -72,6 +77,7 @@
   }
 }
 
+// for tablet and small desktop screen sizes
 @media screen and (min-width: 478px) and (max-width: 1000px) {
   .featuresection-title {
     font-size: 26px;
